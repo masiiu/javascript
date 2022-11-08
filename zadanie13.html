@@ -1,0 +1,28 @@
+<html>
+	<body>
+		<div style="color:navy;font-size:85px;">
+			<script language="JavaScript">
+				var liczba1=prompt("Podaj Pierwsza Liczbe A=","");
+				var liczba2=prompt("Podaj Druga Liczbe B=","");
+				var a_k=parseFloat(liczba1);
+				var b_k=parseFloat(liczba2);
+				
+				document.write("Wczytane Liczby: A="+a_k+" | B="+b_k+"<br>");
+				document.write("("+a_k+" + "+b_k+")^3=");
+				document.write(a_k+"^3");
+				document.write("+3*(("+a_k+")^2)*("+b_k+")");
+				document.write("+3*("+a_k+")*(("+b_k+")^"+b_k+")");
+				document.write("+"+b_k+"^3");
+
+				suma_1= a_k*a_k*a_k;
+				suma_2= ((3*a_k)*a_k)*b_k;
+				suma_3= 3*a_k*(b_k*b_k);
+				suma_4= b_k*b_k*b_k;
+				
+				suma_k=suma_1+suma_2+suma_3+suma_4;
+				document.write("="+suma_k);
+				
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<textarea rows="50" cols="200">
+<html>
+	<body>
+		<div style="color:green;font-size:57px;">
+			 <script language="JavaScript">
+			 
+				var data1=prompt("D1= ");
+				var godz1=prompt("G1= ");
+				
+				var data2=prompt("D2= ");
+				var godz2=prompt("G2= ");
+
+				var D1_git=parseFloat(data1);
+				var G1_git=parseFloat(godz1);
+				 
+				var D2_git=parseFloat(data2);
+				var G2_git=parseFloat(godz2);
+				 
+				 
+				 
+	
+		 s1=(D1_git-D2_git)*24*60*60;
+		 s2=s1-((24-G1_git)*60*60)+((24-G2_git)*60*60);
+				 
+			 
+		    document.write("Ilość sekund= "+s2+" sekund<br>");
+			 </script>
+		</div>
+	</body>
+</html>
+</textarea>
+<html>
+	
+	<head>
+<script type="text/javascript">
+		function okno_zamknij_Schachta()
+		{
+		window.close()
+		}
+		</script>
+	</head>
+
+	<body>
+	<input type="button" value="zamknij okno" onclick="okno_zamknij_Schachta()"/>
+	</body>
+	
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<div style="color:blue;font-size:80px;">
+			<script language="JavaScript">
+
+				var liczba1=prompt("c=","");
+				var liczba2=prompt("b=","");
+				var c_git=parseFloat(liczba1);
+				var b_git=parseFloat(liczba2);
+				
+				document.write("c="+c_git.toFixed(3)+" cm"+"<br>");
+				document.write("b="+b_git.toFixed(3)+" cm"+"<br>");
+				
+				a_git=Math.sqrt(Math.pow(c_git,2)-Math.pow(b_git,2));
+				document.write("a="+a_git.toFixed(3)+" cm"+"<br>");
+				
+				sin_alfa_git=b_git/c_git;
+				document.write("sin="+sin_alfa_git.toFixed(3)+"<br>");
+				
+				alfa_git=Math.asin(b_git/c_git)*(180/Math.PI);
+				document.write("alfa="+alfa_git.toFixed(3)+" st"+"<br>");
+				
+				obw_git=(a_git+b_git+c_git);
+				document.write("Obwod="+obw_git.toFixed(3)+" cm"+"<br>");
+				
+			</script>
+		</div>
+	</body>
+</html>
